@@ -1,0 +1,17 @@
+body{
+    background-color: orange;
+}
+h2{
+    text-align: center;
+}
+.container{
+    margin: 48px;
+}
+#grandParent{
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

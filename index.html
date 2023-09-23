@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 25</title>
+</head>
+<body>
+    <main>
+        <!-- popup events onclick -->
+        <section>
+            <div class="container">
+                <h2>Popup events</h2>
+                <h3 onclick="alert('Are you serious?')">click me(Alert)</h3>
+                <h3 onclick="confirm('Are you serious?')">click me(Confirm)</h3>
+                <h3 onclick="prompt('Are you serious?')">click me(prompt)</h3>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>body color change</h2>
+                <button onclick="makeWhite()">Default white</button>
+                <button id="green">Green</button>
+                <button id="red">Red</button>
+                <button id="yellow">Yellow</button>
+                <button id="skyBlue">Sky Blue</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="container" id="commentDiv">
+                <h2>comment box</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at numquam accusantium repellat asperiores aliquid voluptas ipsa ipsam officia dolorum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at numquam accusantium repellat asperiores aliquid voluptas ipsa ipsam officia dolorum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at numquam accusantium repellat asperiores aliquid voluptas ipsa ipsam officia dolorum.</p>
+            </div>
+            <textarea cols="30" rows="10" id="commentText" style="margin-left: 36px;"></textarea>
+            <br><button id="comments">Submit</button>
+
+            <!-- event delegate   -->
+            <section>
+                <div class="container">
+                    <h2>Event Delegation</h2>
+                    <div id="grandParent">
+                        <ul id="parent">
+                            <li id="item">Lorem, ipsum dolor.</li>
+                            <li id="item">Lorem, ipsum dolor.</li>
+                            <li id="item">Lorem, ipsum dolor.</li>
+                            <li id="item">Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- event bubble -->
+
+            <section>
+                <div class="container">
+                    <h2>Event Bubble</h2>
+                    <div id="container">
+                        <ul id="itemContainer">
+                            <li id="item">Lorem, ipsum dolor.</li>
+                            <li id="item-2">only this item will fire</li>
+                            <li id="item">Lorem, ipsum dolor.</li>
+                            <li id="item">Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
